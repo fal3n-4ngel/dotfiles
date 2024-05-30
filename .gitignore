@@ -1,0 +1,44 @@
+# Ignore everything by default
+*
+
+# Unignore all dotfiles and dotdirs
+!/.?*
+
+# Ignore specific dotdirs
+.cache/
+.npm/
+.mozilla/
+.vscode/
+
+
+# Ignore other files/dirs
+*.zwc
+.zcompdump*
+.zsh_history*
+.bash_history
+.lesshst
+.dbus-keyrings/
+.emacs.d/
+.gimp-2.8/
+.git/
+.gitk
+.idlerc/
+.saves/
+.thumbnails/
+
+# Unignore specific files/dirs
+!/.gitignore
+!/.gitconfig
+!/.zshrc
+!/.bashrc
+!/.config/*
+!/.config/*/*
+!/.ssh/
+!/.gnupg/
+!/.local/share/
+!/.pki/
+
+#Ignore again
+/.config/Code/
+/.config/discord/
+/.config/google-chrome/
