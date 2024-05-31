@@ -1,8 +1,11 @@
 # Hikki's Dotfiles
 
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/16f9a460-3237-4e2e-9947-74712fe795c6)
 
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/c2ef6780-38c4-49f6-aaf4-89fd7e1ffd17)
+![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/fb71ba0d-8edb-40ce-9c85-5a8488dfa3de)
+
+![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/a92a20ce-3e27-4831-bc71-9034dd142010)
+
+
 
 
 ```
@@ -120,9 +123,11 @@ hikki@nixos ~/.config »
 │   ├── First Run
 │   ├── GraphiteDawnCache
 │   ├── GrShaderCache
+│   ├── Guest Profile
 │   ├── hyphen-data
 │   ├── Last Version
 │   ├── Local State
+│   ├── Local Traces
 │   ├── MEIPreload
 │   ├── NativeMessagingHosts
 │   ├── OnDeviceHeadSuggestModel
@@ -131,15 +136,14 @@ hikki@nixos ~/.config »
 │   ├── OriginTrials
 │   ├── PKIMetadata
 │   ├── PrivacySandboxAttestationsPreloaded
+│   ├── Profile 1
 │   ├── Safe Browsing
 │   ├── SafetyTips
 │   ├── segmentation_platform
 │   ├── ShaderCache
-│   ├── SingletonCookie -> 8265454151921588316
-│   ├── SingletonLock -> nixos-8038
-│   ├── SingletonSocket -> /tmp/.com.google.Chrome.Q7D668/SingletonSocket
 │   ├── SSLErrorAssistant
 │   ├── Subresource Filter
+│   ├── System Profile
 │   ├── TpcdMetadata
 │   ├── TrustTokenKeyCommitments
 │   ├── Variations
@@ -189,6 +193,8 @@ hikki@nixos ~/.config »
     ├── config
     ├── mocha_refrence.css
     └── style.css
+
+106 directories, 77 files
 
 ```
 
