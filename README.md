@@ -1,11 +1,22 @@
 # Hikki's Dotfiles
 
+```markdown
+# NixOs
++ Colors: Catppuccin 
++ Term : Kitty
++ Shell : Zsh
++ GTK Theme: Catppuccin Frappe Standard Dark Blue
++ Launcher : wofi
+
+```
+
 
 ![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/fb71ba0d-8edb-40ce-9c85-5a8488dfa3de)
 
 ![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/a92a20ce-3e27-4831-bc71-9034dd142010)
 
 
+![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/673cb837-3c6f-4e25-9b1d-acbd6067a730)
 
 
 ```
