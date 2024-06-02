@@ -11,11 +11,15 @@
 ```
 
 ## Screenshots
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/fb71ba0d-8edb-40ce-9c85-5a8488dfa3de)
 
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/a92a20ce-3e27-4831-bc71-9034dd142010)
+![Screenshot from 2024-06-02 17-12-51](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/74e537b2-a3bf-4f00-9732-7b6dd1a81867)
 
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/673cb837-3c6f-4e25-9b1d-acbd6067a730)
+![Screenshot from 2024-06-02 17-13-40](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/6c0a59ee-1479-4184-b2fc-21bd849214c0)
+
+![Screenshot from 2024-06-02 17-24-53](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/ad82a040-ff55-4006-9a75-fe24c11f6ffc)
+
+![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/4e89a2b3-53c6-4800-9716-0ba4a2211e80)
+
 
 
 ## configuration.nix
