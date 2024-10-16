@@ -1,12 +1,23 @@
 [Default Applications]
-text/html=brave-browser.desktop
+text/html=google-chrome.desktop
 x-scheme-handler/http=brave-browser.desktop
 x-scheme-handler/https=brave-browser.desktop
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 image/png=org.gnome.Loupe.desktop
 x-scheme-handler/tg=org.telegram.desktop.desktop
+image/jpeg=org.gnome.Loupe.desktop
+text/vnd.trolltech.linguist=code.desktop
+image/svg+xml=org.gnome.Loupe.desktop
+application/x-tiled-tsx=code.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+text/x-csrc=org.gnome.gedit.desktop
 
 [Added Associations]
 image/png=org.gnome.Loupe.desktop;
 x-scheme-handler/tg=org.telegram.desktop.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+text/vnd.trolltech.linguist=code.desktop;
+image/svg+xml=org.gnome.Loupe.desktop;
+application/x-tiled-tsx=code.desktop;
+text/x-csrc=org.gnome.gedit.desktop;

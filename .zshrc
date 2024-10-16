@@ -75,6 +75,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-completions
+  zsh-autocomplete
 )
 source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit

@@ -39,6 +39,9 @@
 !/.pki/
 
 #Ignore again
-/.config/Code/
-/.config/discord/
-/.config/google-chrome/
+.config/Code/
+.config/discord/
+.config/google-chrome/
+.config/dconf/
+.config/dunst/
+.config/chromium/
