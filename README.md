@@ -1,478 +1,158 @@
-# Hikki's Dotfiles
+# ❄️ NixOS Dotfiles
 
-```markdown
-# NixOs
-+ Colors: Catppuccin 
-+ Term : Kitty
-+ Shell : Zsh
-+ GTK Theme: Catppuccin Frappe Standard Dark Blue
-+ Launcher : wofi
-
-```
+*My simple configuration files for NixOS. Kinda suited for most dev purposes ig.. , and yes GNOME...*
 
 ## Screenshots
 
-![Screenshot from 2024-06-02 17-12-51](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/74e537b2-a3bf-4f00-9732-7b6dd1a81867)
+![image](https://github.com/user-attachments/assets/f03c5b6d-69a0-4a88-b5ff-45ac832e20cb)
 
-![Screenshot from 2024-06-02 17-13-40](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/6c0a59ee-1479-4184-b2fc-21bd849214c0)
+![image](https://github.com/user-attachments/assets/15dbb64d-1d7a-40be-9e73-3b37e5673a8f)
 
-![Screenshot from 2024-06-02 17-24-53](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/ad82a040-ff55-4006-9a75-fe24c11f6ffc)
-
-![image](https://github.com/fal3n-4ngel/dotfiles/assets/79042374/4e89a2b3-53c6-4800-9716-0ba4a2211e80)
+![image](https://github.com/user-attachments/assets/3e09ea2c-7987-4e90-adc5-988067490460)
 
 
+## ⚙️ Info
 
-## configuration.nix
-```mardown
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+- **OS**: NixOS
+- **WM**: Gnome
+- **Shell**: Zsh
+- **Term**: Kitty
+- **Editor**: Neovim
+- **Browser**: Firefox
+- **Theme**: Catppuccin
+- **Launcher**: rofi
 
-{ config, pkgs, ... }:
+## 🚀 Installation
 
+### Prerequisites:
 
-{
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      <catppuccin/modules/nixos>
-    ];
-  # Catpuccin
-  catppuccin.flavor = "frappe";
-  catppuccin.accent = "blue";
-  catppuccin.enable = true;
+- [NixOS installed and running](https://nixos.org/manual/nixos/stable/index.html#ch-installation)
+- [Flakes enabled](https://nixos.wiki/wiki/flakes)
+- Root access
 
-  # Bootloader.
-  # boot.loader.systemd-boot.enable = true;
-  # boot.loader.efi.canTouchEfiVariables = true;
+### Steps:
 
+1. Clone the repository:
 
-  
- 
-  boot.loader.grub = {
-    enable = true;
-    efiSupport = true;
-    device = "nodev"; # Use EFI mode, no device for BIOS
-    useOSProber = true; # Enable os-prober to detect other OSes
-   };
-  boot.loader.efi.canTouchEfiVariables = true;
+```bash
+git clone https://github.com/fal3n-4ngel/dotfiles ~/.config/nixos && cd ~/.config/nixos
+```
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+2. Edit the `configuration.nix` file to match your system requirements.
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+3. Build and switch to the new configuration:
 
-  # Enable networking
-  networking.networkmanager.enable = true;
-  
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+```bash
+sudo nixos-rebuild switch
+```
 
-  # Set your time zone.
-  time.timeZone = "Asia/Kolkata";
-  time.hardwareClockInLocalTime = true;
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_IN";
+## 🛠️ Usage
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_IN";
-    LC_IDENTIFICATION = "en_IN";
-    LC_MEASUREMENT = "en_IN";
-    LC_MONETARY = "en_IN";
-    LC_NAME = "en_IN";
-    LC_NUMERIC = "en_IN";
-    LC_PAPER = "en_IN";
-    LC_TELEPHONE = "en_IN";
-    LC_TIME = "en_IN";
-  };
+### Useful Commands
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
+- Rebuild and switch system configuration:
+```bash
+sudo nixos-rebuild switch
+```
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+- Update the system:
+```bash
+sudo nix-channel --update
+```
 
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
+## 📊 Packages
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
+This configuration includes a wide range of packages for system utilities, productivity, theming, development, and more. Some highlights include:
 
-  # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+- System: wget, curl, htop, unzip, zip, gnupg, ripgrep, fd, jq, neofetch
+- Desktop: hyprland, waybar, wofi, kitty
+- Development: vim, neovim, vscode, gcc, python3, nodejs, openjdk
+- Browsers: google-chrome, firefox
+- Media: spotify, vlc
+- And many more!
 
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.hikki = {
-    isNormalUser = true;
-    description = "hikki";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
-  };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+For a full list of packages
+```nix
   environment.systemPackages = with pkgs; [
     # System Utilities
-    wget
-    curl
-    htop
-    unzip
-    zip
-    gnupg
-    ripgrep
-    fd
-    jq
-    neofetch
-    kitty
-    gnome.gnome-tweaks
-    nomacs
-    loupe
-    telegram-desktop
-    gnome.dconf-editor
-    polybar
-    waybar
-    cmatrix
-    gimp
+    wget curl htop unzip zip gnupg ripgrep fd jq neofetch kitty
+    gnome.gnome-tweaks nomacs loupe gnome.dconf-editor polybar waybar
+    cmatrix w3m efibootmgr cmake cargo glibc glibcLocales
 
+    # Productivity
+    notion telegram-desktop gimp vlc chromium hunspell hunspellDicts.uk_UA hunspellDicts.th_TH
     
     # Theming
-    waypaper
-    wayland
-    wayland-protocols
-    pywal
-    swaybg
-    wofi
-    gtk3
-    gdk-pixbuf
-    libnotify
-    catppuccin-gtk
+    waypaper wayland wayland-protocols pywal swaybg wofi gtk3 gdk-pixbuf
+    libnotify catppuccin-gtk eww swww catppuccin rofi yazi
 
     # Editors and IDEs
-    vim
-    neovim
-    vscode
-    gedit
-    
-    
+    vim neovim vscode gedit jetbrains.clion
+
     # Web Browsers
-    google-chrome
-    tor-browser
-    brave
+    google-chrome tor-browser-bundle-bin
 
     # Media and Communication
-    spotify
-    discord
+    spotify discord
 
     # Shells and Shell Utilities
-    bash
-    zsh
-    fish
-    tmux
-    alacritty
+    bash zsh fish tmux alacritty
 
     # Version Control
-    git
-    gh
-    mercurial
-    subversion
+    git gh mercurial subversion
 
     # Programming Languages and Tools
-    gcc
-    libgcc
-    libgccjit
-    python3
-    python311Packages.pip
-    nodejs_21
-    openjdk
-    temurin-jre-bin-21
-    maven
-    dotnet-sdk
-    
+    gcc gnumake stdenv glibc libgcc stdenv.cc.cc.lib libgccjit
+    python3 python311Packages.pip nodejs_21 nodePackages.pnpm
+    openjdk temurin-jre-bin-21 maven dotnet-sdk flex bison
+
     # Database Clients
-    postgresql
-    mysql
-    sqlite
+    postgresql mysql sqlite
+
+    # PenTest
+    wireshark wireguard-tools nmap wifite2
+
+    # Gaming
+    minecraft
 
     # Containers and Virtualization
-    docker
-    
+    docker google-cloud-sdk
+
     # Utilities
-    woeusb
-    tor
-    tor-browser-bundle-bin
-    torsocks
-    openvpn
-    nmap
-    ntfs3g
-    tree
+    woeusb tor torsocks openvpn ntfs3g tree wine gjs
 
     # Aesthetic Themes
-    numix-cursor-theme
-    numix-icon-theme
-    materia-theme
-    papirus-icon-theme
+    numix-cursor-theme numix-icon-theme materia-theme
+    papirus-icon-theme whitesur-icon-theme nordzy-icon-theme
 
-    # others
-    vlc
-    pipx
-    xorg.xbacklight
+    # Others
+    pipx xorg.xbacklight
+
+    # Added packages
+    hyprland xdg-desktop-portal-hyprland xwayland polybar
+    qt5ct qt6ct libva linuxHeaders alsa-lib jack2 wireplumber
+    dart-sass networkmanagerapplet polkit_gnome pamixer
+    python3Packages.requests python3Packages.jinja2 python3Packages.pillow
+    gst_all_1.gst-plugins-base gst_all_1.gst-plugins-good gst_all_1.gst-plugins-ugly
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+
+    # Add Home Manager
+    home-manager
   ];
-  
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 2d --keep-generations 5";
-  };
-  
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  
-  services.flatpak.enable = true;
-  system.stateVersion = "23.11"; # Did you read the comment?
-
-}
-
 ```
 
-## Folder Structure
-```
-hikki@nixos ~/.config » 
-.
-├── alacritty
-│   ├── alacritty.toml
-│   ├── alacritty.yml
-│   ├── catppuccin-frappe.toml
-│   ├── catppuccin-latte.toml
-│   ├── catppuccin-macchiato.toml
-│   └── catppuccin-mocha.toml
-├── background
-├── BraveSoftware
-│   └── Brave-Browser
-├── Code
-│   ├── Backups
-│   ├── blob_storage
-│   ├── Cache
-│   ├── CachedData
-│   ├── CachedExtensionVSIXs
-│   ├── CachedProfilesData
-│   ├── Code Cache
-│   ├── code.lock
-│   ├── Cookies
-│   ├── Cookies-journal
-│   ├── Crashpad
-│   ├── databases
-│   ├── DawnCache
-│   ├── Dictionaries
-│   ├── GPUCache
-│   ├── languagepacks.json
-│   ├── Local Storage
-│   ├── logs
-│   ├── machineid
-│   ├── Network Persistent State
-│   ├── Preferences
-│   ├── Service Worker
-│   ├── Session Storage
-│   ├── TransportSecurity
-│   ├── User
-│   └── WebStorage
-├── dconf
-│   └── user
-├── discord
-│   ├── 0.0.53
-│   ├── blob_storage
-│   ├── Cache
-│   ├── Code Cache
-│   ├── component_crx_cache
-│   ├── Cookies
-│   ├── Cookies-journal
-│   ├── Crashpad
-│   ├── DawnCache
-│   ├── Dictionaries
-│   ├── GPUCache
-│   ├── Local State
-│   ├── Local Storage
-│   ├── modules.log
-│   ├── Network Persistent State
-│   ├── Preferences
-│   ├── quotes.json
-│   ├── sentry
-│   ├── Session Storage
-│   ├── settings.json
-│   ├── Shared Dictionary
-│   ├── shared_proto_db
-│   ├── SharedStorage
-│   ├── SingletonCookie -> 4603803728133209526
-│   ├── SingletonLock -> nixos-53966
-│   ├── SingletonSocket -> /tmp/scoped_dirjuCfgK/SingletonSocket
-│   ├── TransportSecurity
-│   ├── tray-connected.png
-│   ├── tray-deafened.png
-│   ├── tray-muted.png
-│   ├── tray.png
-│   ├── tray-speaking.png
-│   ├── tray-unread.png
-│   ├── Trust Tokens
-│   ├── Trust Tokens-journal
-│   ├── VideoDecodeStats
-│   └── WidevineCdm
-├── Electron
-├── enchant
-│   ├── he.dic
-│   └── he.exc
-├── evolution
-│   └── sources
-├── geary
-├── gedit
-│   └── accels
-├── GIMP
-│   └── 2.10
-├── gnome-initial-setup-done
-├── gnome-session
-│   └── saved-session
-├── goa-1.0
-├── google-chrome
-│   ├── AutofillStates
-│   ├── BrowserMetrics
-│   ├── BrowserMetrics-spare.pma
-│   ├── CertificateRevocation
-│   ├── component_crx_cache
-│   ├── Consent To Send Stats
-│   ├── CrashpadMetrics-active.pma
-│   ├── Crash Reports
-│   ├── Crowd Deny
-│   ├── Default
-│   ├── DeferredBrowserMetrics
-│   ├── Dictionaries
-│   ├── FileTypePolicies
-│   ├── first_party_sets.db
-│   ├── first_party_sets.db-journal
-│   ├── FirstPartySetsPreloaded
-│   ├── First Run
-│   ├── GraphiteDawnCache
-│   ├── GrShaderCache
-│   ├── Guest Profile
-│   ├── hyphen-data
-│   ├── Last Version
-│   ├── Local State
-│   ├── Local Traces
-│   ├── MEIPreload
-│   ├── NativeMessagingHosts
-│   ├── OnDeviceHeadSuggestModel
-│   ├── optimization_guide_model_store
-│   ├── OptimizationHints
-│   ├── OriginTrials
-│   ├── PKIMetadata
-│   ├── PrivacySandboxAttestationsPreloaded
-│   ├── Profile 1
-│   ├── Safe Browsing
-│   ├── SafetyTips
-│   ├── segmentation_platform
-│   ├── ShaderCache
-│   ├── SSLErrorAssistant
-│   ├── Subresource Filter
-│   ├── System Profile
-│   ├── TpcdMetadata
-│   ├── TrustTokenKeyCommitments
-│   ├── Variations
-│   ├── Webstore Downloads
-│   ├── WidevineCdm
-│   └── ZxcvbnData
-├── gtk-2.0
-│   └── gtkfilechooser.ini
-├── gtk-3.0
-│   ├── bookmarks
-│   └── settings.ini
-├── gtk-4.0
-│   └── settings.ini
-├── ibus
-│   └── bus
-├── kitty
-│   ├── Catppuccin-Macchiato.conf
-│   ├── current-theme.conf
-│   ├── kitty.conf
-│   └── zsh_history
-├── mimeapps.list
-├── monitors.xml
-├── nautilus
-│   └── search-metadata
-├── neofetch
-│   └── config.conf
-├── nextjs-nodejs
-│   └── config.json
-├── nomacs
-│   └── Image Lounge.conf
-├── polybar
-│   ├── config.ini
-│   ├── frappe.ini
-│   ├── latte.ini
-│   ├── macchiato.ini
-│   └── mocha.ini
-├── pulse
-│   └── cookie
-├── spotify
-│   ├── prefs
-│   └── Users
-├── user-dirs.dirs
-├── user-dirs.locale
-├── vscode-sqltools
-│   └── runningInfo.json
-└── wofi
-    ├── config
-    ├── mocha_refrence.css
-    └── style.css
+## 🎨 Theming
 
-106 directories, 77 files
+This setup uses the Catppuccin theme for a cohesive and visually appealing desktop environment. The theme is applied to various components including GTK, terminal, and system applications.
 
-```
+## 📝 Note
 
+This configuration is personalized for my setup. You might need to adjust certain settings to fit your specific hardware and preferences.
+
+## 📞 Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- GitHub: [fal3n-4ngel](https://github.com/fal3n-4ngel)
+- Name: Adithya Krishnan
+- Email: hello@adithyakrishnan.com
