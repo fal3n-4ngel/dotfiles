@@ -2,16 +2,16 @@
 <a href='#'><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/></a>
   <br>
   <div>
-    <a href="https://github.com/redyf/nixdots/issues">
+    <a href="https://github.com/fal3n-4ngel/dotfiles/issues">
         <img src="https://img.shields.io/github/issues/fal3n-4ngel/dotfiles?color=fab387&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/redyf/nixdots/stargazers">
+    <a href="https://github.com/fal3n-4ngel/dotfiles/stargazers">
         <img src="https://img.shields.io/github/stars/fal3n-4ngel/dotfiles?color=ca9ee6&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/redyf/nixdots">
+    <a href="https://github.com/fal3n-4ngel/dotfiles">
         <img src="https://img.shields.io/github/repo-size/fal3n-4ngel/dotfiles?color=ea999c&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/redyf/nixdots/LICENSE">
+    <a href="https://github.com/fal3n-4ngel/dotfiles/LICENSE">
         <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
     </a>
     <br>
