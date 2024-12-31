@@ -16,173 +16,136 @@
     </a>
     <br>
     </div>
+</h1>
 
-   </h1>
-   <h1 align="center"> ❄️ NixOS Dotfiles❄️</h1>
+<h1 align="center">🐧 EndeavourOS Dotfiles 🐧</h1>
 
 <div align="center">
 
-*My simple configuration files for NixOS. Kinda suited for most dev purposes ig.. , and yes GNOME...*
+*My configuration files for EndeavourOS. A dev-friendly setup with a focus on productivity and aesthetics.*
 
 </div>
 
 ## ⚙️ Info
 ```mint
  -----------------------------------
- ╭─ Distro  -> NixOS
- ├─ Editor  -> Neovim
- ├─ Browser -> FireFox
- ├─ Shell   -> ZSH
- ╰─ Term    -> Kitty
- ╭─ Model      -> Legion Slim 5
- ├─ CPU        -> AMD Ryzen 7 7840HS
- ╰─ GPU        -> NVIDIA GeForce RTX 4060 8GB
- ╭─ WM       -> Gnome
- ├─ Terminal -> Kitty
- ├─ Theme    -> Catppuccin
- ├─ Font     -> Monospace
- ╰─ Launcher -> Rofi
-                        
+    コンピューター
+ ┌──────────────────────────────────────────┐
+    OS : EndeavourOS x86_64
+    Kernel : Linux 6.12.7-arch1-1
+    Packages : 1470 (pacman)
+    Display : 2560x1600 @ 165 Hz in 16" [Built-in]
+    WM : bspwm (X11)
+    Terminal : kitty 0.38.1
+ └──────────────────────────────────────────┘
+    : hikki@celestia
+ ┌──────────────────────────────────────────┐
+    CPU : AMD Ryzen 7 7840HS w/ Radeon 780M Graphics
+    GPU : GeForce RTX 4060 Max-Q / Mobile
+    GPU : AMD Radeon 780M
+    GPU Driver : nvidia (proprietary) 565.77
+    GPU Driver : amdgpu
+   ﬙ Memory : 3.17 GiB / 14.81 GiB (21%)
+   󱦟 OS Age  : 1 days
+   󱫐 Uptime  : 6 mins
+ └──────────────────────────────────────────┘
+                ● ● ● ● ● ● ● ●
 ```
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/f03c5b6d-69a0-4a88-b5ff-45ac832e20cb)
+![Shot-2024-12-31-155146](https://github.com/user-attachments/assets/294b2746-b716-44f7-9e30-b77c80765a13)
 
-![image](https://github.com/user-attachments/assets/15dbb64d-1d7a-40be-9e73-3b37e5673a8f)
+![Shot-2024-12-31-154507](https://github.com/user-attachments/assets/f835fa42-6e4d-49ad-9a6d-bf09fc4e96a8)
 
-![image](https://github.com/user-attachments/assets/3e09ea2c-7987-4e90-adc5-988067490460)
-
-
-
-
+![Shot-2024-12-31-155704](https://github.com/user-attachments/assets/cb5c7a3d-6edc-410d-85b0-96f35c936c8a)
 
 ## 🚀 Installation
 
 ### Prerequisites:
 
-- [NixOS installed and running](https://nixos.org/manual/nixos/stable/index.html#ch-installation)
-- [Flakes enabled](https://nixos.wiki/wiki/flakes)
-- Root access
+- EndeavourOS with Hyprland
+- Git
+- yay package manager
 
 ### Steps:
 
 1. Clone the repository:
-
 ```bash
-git clone https://github.com/fal3n-4ngel/dotfiles ~/.config/nixos && cd ~/.config/nixos
+git clone https://github.com/fal3n-4ngel/dotfiles ~/.config && cd ~/.config
 ```
 
-2. Edit the `configuration.nix` file to match your system requirements.
-
-3. Build and switch to the new configuration:
-
+2. Install required packages:
 ```bash
-sudo nixos-rebuild switch
+yay -S hyprland waybar rofi kitty neovim firefox-developer-edition \
+    catppuccin-gtk-theme-mocha papirus-icon-theme \
+    nerd-fonts-jetbrains-mono polybar dunst picom
+```
+
+3. Copy configurations:
+```bash
+cp -r * ~/.config/
 ```
 
 ## 🛠️ Usage
 
 ### Useful Commands
 
-- Rebuild and switch system configuration:
+- Update system:
 ```bash
-sudo nixos-rebuild switch
+yay -Syu
 ```
 
-- Update the system:
+- Install a package:
 ```bash
-sudo nix-channel --update
+yay -S package_name
 ```
 
-## 📊 Packages
+## 📊 Key Packages
 
-This configuration includes a wide range of packages for system utilities, productivity, theming, development, and more. Some highlights include:
+This configuration includes essential packages for development and daily use:
 
-- System: wget, curl, htop, unzip, zip, gnupg, ripgrep, fd, jq, neofetch
-- Desktop: hyprland, waybar, wofi, kitty
-- Development: vim, neovim, vscode, gcc, python3, nodejs, openjdk
-- Browsers: google-chrome, firefox
-- Media: spotify, vlc
-- And many more!
+### System & WM
+- Hyprland (Window Manager)
+- Waybar (Status bar)
+- Rofi (Application launcher)
+- Dunst (Notifications)
+- Picom (Compositor)
 
-For a full list of packages
-```nix
-  environment.systemPackages = with pkgs; [
-    # System Utilities
-    wget curl htop unzip zip gnupg ripgrep fd jq neofetch kitty
-    gnome.gnome-tweaks nomacs loupe gnome.dconf-editor polybar waybar
-    cmatrix w3m efibootmgr cmake cargo glibc glibcLocales
+### Development
+- Neovim (Text editor)
+- VS Code
+- Git
+- Python, Node.js, Rust
+- Docker
+- Various development tools
 
-    # Productivity
-    notion telegram-desktop gimp vlc chromium hunspell hunspellDicts.uk_UA hunspellDicts.th_TH
-    
-    # Theming
-    waypaper wayland wayland-protocols pywal swaybg wofi gtk3 gdk-pixbuf
-    libnotify catppuccin-gtk eww swww catppuccin rofi yazi
+### Applications
+- Firefox Developer Edition
+- Kitty terminal
+- Spotify
+- Discord
+- Telegram
 
-    # Editors and IDEs
-    vim neovim vscode gedit jetbrains.clion
-
-    # Web Browsers
-    google-chrome tor-browser-bundle-bin
-
-    # Media and Communication
-    spotify discord
-
-    # Shells and Shell Utilities
-    bash zsh fish tmux alacritty
-
-    # Version Control
-    git gh mercurial subversion
-
-    # Programming Languages and Tools
-    gcc gnumake stdenv glibc libgcc stdenv.cc.cc.lib libgccjit
-    python3 python311Packages.pip nodejs_21 nodePackages.pnpm
-    openjdk temurin-jre-bin-21 maven dotnet-sdk flex bison
-
-    # Database Clients
-    postgresql mysql sqlite
-
-    # PenTest
-    wireshark wireguard-tools nmap wifite2
-
-    # Gaming
-    minecraft
-
-    # Containers and Virtualization
-    docker google-cloud-sdk
-
-    # Utilities
-    woeusb tor torsocks openvpn ntfs3g tree wine gjs
-
-    # Aesthetic Themes
-    numix-cursor-theme numix-icon-theme materia-theme
-    papirus-icon-theme whitesur-icon-theme nordzy-icon-theme
-
-    # Others
-    pipx xorg.xbacklight
-
-    # Added packages
-    hyprland xdg-desktop-portal-hyprland xwayland polybar
-    qt5ct qt6ct libva linuxHeaders alsa-lib jack2 wireplumber
-    dart-sass networkmanagerapplet polkit_gnome pamixer
-    python3Packages.requests python3Packages.jinja2 python3Packages.pillow
-    gst_all_1.gst-plugins-base gst_all_1.gst-plugins-good gst_all_1.gst-plugins-ugly
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-
-    # Add Home Manager
-    home-manager
-  ];
-```
+### Theming
+- Catppuccin GTK theme
+- Papirus icon theme
+- JetBrainsMono Nerd Font
+- Custom Waybar theme
+- Custom Rofi theme
 
 ## 🎨 Theming
 
-This setup uses the Catppuccin theme for a cohesive and visually appealing desktop environment. The theme is applied to various components including GTK, terminal, and system applications.
+The setup uses the Catppuccin Mocha theme across all applications for a consistent look:
+- GTK Theme: Catppuccin-Mocha
+- Icons: Papirus
+- Terminal: Kitty with Catppuccin
+- Neovim: Custom theme based on Catppuccin
+- Waybar: Custom Catppuccin-inspired theme
 
 ## 📝 Note
 
-This configuration is personalized for my setup. You might need to adjust certain settings to fit your specific hardware and preferences.
+This configuration is personalized for my workflow. You might want to adjust settings according to your preferences and hardware.
 
 ## 📞 Contact
 
