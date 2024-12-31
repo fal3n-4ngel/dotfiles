@@ -37,7 +37,7 @@
 !/.gnupg/
 !/.local/share/
 !/.pki/
-!.config/bspwm/rices/*
+!.config/bspwm/rices/** 
 !
 
 #Ignore again
