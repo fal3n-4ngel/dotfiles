@@ -1,0 +1,99 @@
+/bin/sh: line 1: /home/hikki/.screenlayout/monitor.sh: No such file or directory
+/usr/bin/dex:616: DeprecationWarning: glob.glob1 is deprecated and will be removed in Python 3.15. Use glob.glob and pass a directory to its root_dir argument instead.
+  for _f in glob.glob1(d, '*.desktop'):
+amixer: Unable to find simple control 'Master',0
+
+amixer: Unable to find simple control 'Master',0
+
+blueman-applet 07.23.32 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 07.23.32 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+Welcome app is disabled. To start it anyway, use option --enable (temporarily: --once).
+WARNING: Icon 'nm-signal-100' not found in icon_path
+
+(xfce4-terminal:1668): xfce4-terminal-WARNING **: 07:23:38.367: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+[ 30/12/24 07:24:35.853 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 65874
+Validating the theme failed: the variable 'background' in `window { background-color: var(background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-background' in `button selected { background-color: var(selected-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-foreground' in `button selected { text-color: var(selected-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `button { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `inputbar { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `prompt { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `entry { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-background' in `element selected normal { background-color: var(selected-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-foreground' in `element selected normal { text-color: var(selected-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-urgent-background' in `element selected urgent { background-color: var(selected-urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-urgent-foreground' in `element selected urgent { text-color: var(selected-urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-active-background' in `element selected active { background-color: var(selected-active-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-active-foreground' in `element selected active { text-color: var(selected-active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-background' in `element normal normal { background-color: var(normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `element normal normal { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'urgent-background' in `element normal urgent { background-color: var(urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'urgent-foreground' in `element normal urgent { text-color: var(urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'active-background' in `element normal active { background-color: var(active-background);}` failed to resolve.
+Validating the theme failed: the variable 'active-foreground' in `element normal active { text-color: var(active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-normal-background' in `element alternate normal { background-color: var(alternate-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-normal-foreground' in `element alternate normal { text-color: var(alternate-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-urgent-background' in `element alternate urgent { background-color: var(alternate-urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-urgent-foreground' in `element alternate urgent { text-color: var(alternate-urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-active-background' in `element alternate active { background-color: var(alternate-active-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-active-foreground' in `element alternate active { text-color: var(alternate-active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'foreground' in `textbox { text-color: var(foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `scrollbar { handle-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `case-indicator { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `textbox-prompt-colon { text-color: var(normal-foreground);}` failed to resolve.
+
+(process:3894): Helpers.IconFetcher-WARNING **: 07:24:40.866: Failed to load image: Failed to open file “~/.config/meowrch/current_wallpaper”: No such file or directory
+
+(process:3894): Helpers.IconFetcher-WARNING **: 07:24:42.051: Failed to load image: Failed to open file “com.github.themix_project.Oomox”: No such file or directory
+ATTENTION: default value of option mesa_glthread overridden by environment.
+
+(xfce4-terminal:5601): xfce4-terminal-WARNING **: 07:25:27.250: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+[ 30/12/24 07:26:37.877 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 154516
+[ 30/12/24 07:26:42.167 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 156449
+[ 30/12/24 07:26:43.696 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 156976
+[ 30/12/24 07:26:45.180 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 157596
+javaldx: Could not find a Java Runtime Environment!
+Warning: failed to read path from javaldx
+Entity: line 1: parser error : Document is empty
+
+^
+[ 30/12/24 07:27:53.649 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 321219
+[ 30/12/24 07:27:53.655 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 321323
+[ 30/12/24 07:27:53.655 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 321327
+[ 30/12/24 07:27:57.563 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 328560
+Validating the theme failed: the variable 'background' in `window { background-color: var(background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-background' in `button selected { background-color: var(selected-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-foreground' in `button selected { text-color: var(selected-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `button { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `inputbar { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `prompt { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `entry { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-background' in `element selected normal { background-color: var(selected-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-normal-foreground' in `element selected normal { text-color: var(selected-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-urgent-background' in `element selected urgent { background-color: var(selected-urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-urgent-foreground' in `element selected urgent { text-color: var(selected-urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'selected-active-background' in `element selected active { background-color: var(selected-active-background);}` failed to resolve.
+Validating the theme failed: the variable 'selected-active-foreground' in `element selected active { text-color: var(selected-active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-background' in `element normal normal { background-color: var(normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `element normal normal { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'urgent-background' in `element normal urgent { background-color: var(urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'urgent-foreground' in `element normal urgent { text-color: var(urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'active-background' in `element normal active { background-color: var(active-background);}` failed to resolve.
+Validating the theme failed: the variable 'active-foreground' in `element normal active { text-color: var(active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-normal-background' in `element alternate normal { background-color: var(alternate-normal-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-normal-foreground' in `element alternate normal { text-color: var(alternate-normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-urgent-background' in `element alternate urgent { background-color: var(alternate-urgent-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-urgent-foreground' in `element alternate urgent { text-color: var(alternate-urgent-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-active-background' in `element alternate active { background-color: var(alternate-active-background);}` failed to resolve.
+Validating the theme failed: the variable 'alternate-active-foreground' in `element alternate active { text-color: var(alternate-active-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'foreground' in `textbox { text-color: var(foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `scrollbar { handle-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `case-indicator { text-color: var(normal-foreground);}` failed to resolve.
+Validating the theme failed: the variable 'normal-foreground' in `textbox-prompt-colon { text-color: var(normal-foreground);}` failed to resolve.
+
+(process:10969): Helpers.IconFetcher-WARNING **: 07:28:33.700: Failed to load image: Failed to open file “~/.config/meowrch/current_wallpaper”: No such file or directory
+[ 30/12/24 07:29:42.569 x_log_error WARN ] X error 3 WINDOW request 2 minor 0 serial 374089
+
+(xfce4-terminal:13375): xfce4-terminal-WARNING **: 07:30:18.919: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+Closing SHM log "/i3-log-1000"
