@@ -11,7 +11,10 @@ text/vnd.trolltech.linguist=code.desktop
 image/svg+xml=org.gnome.Loupe.desktop
 application/x-tiled-tsx=code.desktop
 x-scheme-handler/mailto=google-chrome.desktop
-text/x-csrc=org.gnome.gedit.desktop
+text/x-csrc=code.desktop
+application/zip=org.kde.ark.desktop
+text/css=code.desktop
+application/x-shellscript=code.desktop
 
 [Added Associations]
 image/png=org.gnome.Loupe.desktop;
@@ -20,4 +23,7 @@ image/jpeg=org.gnome.Loupe.desktop;
 text/vnd.trolltech.linguist=code.desktop;
 image/svg+xml=org.gnome.Loupe.desktop;
 application/x-tiled-tsx=code.desktop;
-text/x-csrc=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;code.desktop;
+application/zip=org.kde.ark.desktop;
+text/css=code.desktop;
+application/x-shellscript=code.desktop;

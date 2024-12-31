@@ -37,6 +37,8 @@
 !/.gnupg/
 !/.local/share/
 !/.pki/
+!.config/bspwm/rices/*
+!
 
 #Ignore again
 .config/Code/
