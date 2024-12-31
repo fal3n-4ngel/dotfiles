@@ -34,7 +34,7 @@
     OS : EndeavourOS x86_64
     Kernel : Linux 6.12.7-arch1-1
     Packages : 1470 (pacman)
-    Display : 2560x1600 @ 165 Hz in 16" [Built-in]
+    Display : 2560x1600 @ 165 Hz in 16 [Built-in]
     WM : bspwm (X11)
     Terminal : kitty 0.38.1
  └──────────────────────────────────────────┘
