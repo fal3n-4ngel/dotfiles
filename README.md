@@ -54,11 +54,13 @@
 
 ## Screenshots
 
-![Shot-2024-12-31-155146](https://github.com/user-attachments/assets/294b2746-b716-44f7-9e30-b77c80765a13)
+![Shot-2025-01-02-192109](https://github.com/user-attachments/assets/ea4427a1-0f81-42ec-a376-c2a61e61d669)
 
-![Shot-2024-12-31-214724](https://github.com/user-attachments/assets/f1e9001c-76d5-497c-9a59-2ee8b2513c57)
+![Shot-2025-01-02-202144](https://github.com/user-attachments/assets/d731a706-66ba-408a-9f46-0f69e6f69281)
 
-![Shot-2024-12-31-214657](https://github.com/user-attachments/assets/fb0e11f5-ce64-4aaa-a292-664829600206)
+![Shot-2025-01-02-202610](https://github.com/user-attachments/assets/9eddf6f5-c91a-4bc7-afa3-e7763d739d1d)
+
+
 
 
 
