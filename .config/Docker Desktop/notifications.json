@@ -1,0 +1,58 @@
+{
+	"notifications": [
+		{
+			"guid": "2cb2bac7-ddae-4c24-83ea-abafa0d8c35d",
+			"timestamp": 1735698617265,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "More Docker. Easy Access. New Streamlined Plans.",
+				"icon": "sparkles",
+				"type": "general-purpose",
+				"actionText": "Learn more",
+				"action": {
+					"action": "open-external-url",
+					"params": {
+						"url": "https://www.docker.com/blog/november-2024-updated-plans-announcement/"
+					}
+				}
+			}
+		},
+		{
+			"guid": "1aef2b6c-f277-40f7-ba5a-1f63afce32ac",
+			"timestamp": 1735698755005,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "You must initialize pass before logging in to Docker Desktop",
+				"icon": "error",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"title": "Unable to log in",
+				"actionText": "Learn how",
+				"action": {
+					"action": "open-credential-store-instructions",
+					"params": {}
+				}
+			}
+		},
+		{
+			"guid": "92f73cab-63cc-4876-a2d6-bb1fcae1e7a3",
+			"timestamp": 1735698858279,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "Sign in to share images and collaborate with your team",
+				"icon": "disconnected",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"actionText": "Sign in",
+				"action": {
+					"action": "open-login",
+					"params": {}
+				},
+				"title": "You are signed out"
+			}
+		}
+	]
+}

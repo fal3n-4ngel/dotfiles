@@ -1,0 +1,33 @@
+: 1701751893:0;ls
+: 1701751963:0;sudo pacman -S zsh-autosuggestions
+: 1701751988:0;git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+: 1701752012:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+: 1701752020:0;git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+: 1701752026:0;git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+: 1701752073:0;ls
+: 1701752162:0;cd Desktop
+: 1701752165:0;ls
+: 1701752172:0;cd Programming
+: 1701752173:0;ls
+: 1701752176:0;cd ssp
+: 1701752180:0;cd sdp
+: 1701752192:0;cd Desktop
+: 1701752194:0;ls
+: 1701752197:0;cd Programming
+: 1701752198:0;ls
+: 1701752201:0;cd sdp
+: 1701752202:0;ls
+: 1701752209:0;cd biolink
+: 1701752294:0;code .
+: 1701752409:0;ls
+: 1701753885:0;cd Desktop
+: 1701753892:0;cd Programming
+: 1701753895:0;cd sdp
+: 1701753898:0;cd biolink
+: 1701753901:0;code .
+: 1701753909:0;npm run dev
+: 1701756165:0;ls
+: 1701756290:0;cd Desktop
+: 1701756295:0;cd Programming
+: 1701756299:0;cd sdp
+: 1701756304:0;cd biolink

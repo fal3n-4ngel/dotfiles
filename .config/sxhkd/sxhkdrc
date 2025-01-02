@@ -1,0 +1,2 @@
+ctrl + button1
+    BUTTON=1 /home/hikki/.local/bin/bspwm-drag
